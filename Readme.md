@@ -17,4 +17,6 @@ You can configure using **environment variables**.
 
 ### `REDIS_HOST = "localhost"`
 
-### `REDIS_DATABASE = "1"`
+### `REDIS_PORT = "6379"`
+
+### `REDIS_DB = "1"`

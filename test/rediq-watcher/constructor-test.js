@@ -18,7 +18,7 @@ describe('rediq-watcher', () => {
 
             it('specified -> ok', (done) => {
                 try {
-                    let opts = {}
+                    let opts = { target: 'foobar' }
                     let watcher = new Watcher(opts)
                     should.exist(watcher)
                 } catch(err) {

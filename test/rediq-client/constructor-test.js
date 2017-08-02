@@ -28,6 +28,22 @@ describe('rediq-client', () => {
                 }
             })
         })
+
+        describe('`redis`', () => {
+            let redisOpts = { host: 'localhost', port: 6379, db: 5 }
+
+            it('correctly specified -> ok', (done) => {
+                try {
+                    let opts = { target: 'foobar', redis: redisOpts }
+                    let client = new Client(opts)
+                    should.exist(client)
+                } catch(err) {
+                    should.fail()
+                } finally {
+                    done()
+                }
+            })
+        })
     })
 
     describe('constructor', () => {

@@ -6,6 +6,9 @@
   "scripts": {
     "test": "NODE_PATH=./lib ./node_modules/.bin/mocha -t 5000 $(find ./test -name \\*-test.js)"
   },
+  "bin": {
+    "rediq-enqueue": "./cli/rediq-enqueue.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/issm/node-rediq.git"

@@ -15,8 +15,8 @@ Rediq (node-rediq) - A simple jobqueue toolset via Redis
 
 You can configure using **environment variables**.
 
-### `REDIS_HOST = "localhost"`
+### `REDIQ_REDIS_HOST`, `REDIS_HOST = "localhost"`
 
-### `REDIS_PORT = "6379"`
+### `REDIQ_REDIS_PORT`, `REDIS_PORT = "6379"`
 
-### `REDIS_DB = "1"`
+### `REDIQ_REDIS_DB`, `REDIS_DB = "1"`

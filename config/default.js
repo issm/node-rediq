@@ -9,9 +9,9 @@ const REDIS_DEFAULTS = {
 
 let config = {
     'redis': _.defaults({
-        host: ENV.REDIS_HOST,
-        port: ENV.REDIS_PORT,
-        db:   ENV.REDIS_DB
+        host: ENV.REDIQ_REDIS_HOST || ENV.REDIS_HOST,
+        port: ENV.REDIQ_REDIS_PORT || ENV.REDIS_PORT,
+        db:   ENV.REDIQ_REDIS_DB || ENV.REDIS_DB
     }, REDIS_DEFAULTS)
 }
 

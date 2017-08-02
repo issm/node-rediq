@@ -8,6 +8,7 @@ describe('rediq', () => {
             Rediq.should.have.property('Client')
             Rediq.should.have.property('Watcher')
             Rediq.should.have.property('Worker')
+            Rediq.should.have.property('utils')
 
             done()
         })
